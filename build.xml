@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project basedir="." default="ConcateTest" name="test">
+<project basedir="." default="Main" name="test">
     <property environment="env"/>
     <property name="ECLIPSE_HOME" value="../../eclipse/"/>
     <property name="junit.output.dir" value="junit"/>
@@ -72,4 +72,5 @@
             <report format="frames" todir="${junit.output.dir}"/>
         </junitreport>
     </target>
+    <tagert name="Main" depends="ConcateTest" />
 </project>
