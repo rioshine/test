@@ -56,7 +56,7 @@
             <classpath refid="test.classpath"/>
         </java>
     </target>
-    <target name="ConcateTest">
+    <target name="test">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
@@ -72,5 +72,5 @@
             <report format="frames" todir="${junit.output.dir}"/>
         </junitreport>
     </target>
-    <target name="Main" depends="ConcateTest" />
+    <target name="Main" depends="test" />
 </project>
