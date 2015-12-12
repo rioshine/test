@@ -12,7 +12,7 @@ public class ConcateTest {
 	@Test
 	public void test() {
 		Calculator a = new Calculator();
-		int result = a.add(30, 10);
+		int result = a.add(10, 10);
 		Assert.assertEquals(30, result);
 	}
 
